@@ -11,8 +11,12 @@ app.get('/', async function (req, res, next) {
   } else {
 
     var person = await db.getPerson(name)
-
-    res.send(person);
+    if (!person) {
+      res.status(404)
+      res.send("Person with name " + name + " not found.")
+    } else {
+      res.send(person);
+    }
   }
 });
 

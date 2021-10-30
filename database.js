@@ -4,8 +4,12 @@ const { resolve } = require('path')
 
 async function getPerson(name) {
     const list = await readCSV()
-    console.log(list)
-    return name
+    for (var person of list) {
+        if(person.name === name) {
+            return person
+        } 
+    }
+    return null
 }
 
 function readCSV() {
