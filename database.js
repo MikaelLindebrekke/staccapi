@@ -17,7 +17,7 @@ async function getPerson(name) {
 function readCSV() {
     return new Promise((resolve, reject) => {
         const results = [];
-        fs.createReadStream('./pep.csv')
+        fs.createReadStream('./pep_small.csv')
             .pipe(csv())
             .on('data', (data) => results.push(data))
             .on('end', () => {
