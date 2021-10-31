@@ -29,6 +29,6 @@ function searchClicked(e) {
     .then(person =>
         resultsDiv.innerHTML = `<p> ${person.name} is a politically exposed person </p>`)
     .catch(err => {
-        console.err('There was a problem with fetching person', err)
+        console.error('There was a problem with fetching person', err)
     })
 }

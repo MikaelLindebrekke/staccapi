@@ -23,3 +23,7 @@ html, body {
     font-weight: bold;
     height: 10;
 }
+
+#results {
+    font-weight: bold;
+}
