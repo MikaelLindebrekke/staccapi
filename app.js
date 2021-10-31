@@ -17,6 +17,7 @@ app.get('/search', async function (req, res, next) {
       res.send("Person with name " + name + " not found.")
     } else {
       res.send(person);
+      console.log(person)
     }
   }
 });

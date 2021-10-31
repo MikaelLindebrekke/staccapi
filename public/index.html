@@ -4,6 +4,7 @@
         <title>PEP check</title>
         <meta name="description" content="Politically exposed person check">
         <link rel="stylesheet" href="styles.css">
+        <script src="index.js" defer></script>
     </head>
     <body>
         <header class="main-header">
@@ -14,11 +15,15 @@
                 beeing manipulated by unlawful activities. </p>
         </header>
 
-        <form class="search-form">
+        <form class="search-form" action="" method="GET">
 
             <label for="name">Enter name of person</label>
-            <input type="text" id="name" name="name">
-            <input type="submit" value="Search">
+            <input type="text" id="search-name">
+            <input class="search-button" type="submit" value="Search"></button>
         </form>
+        
+        <div id="results">
+            
+        </div>
     </body>
 </html>

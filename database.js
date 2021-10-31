@@ -5,7 +5,7 @@ const { resolve } = require('path')
 async function getPerson(name) {
     const list = await readCSV()
     for (var person of list) {
-        if(person.name.equals(name)) {
+        if(aContainsB(person.name.toLowerCase(), name.toLowerCase())) {
             return person
         } 
     }
@@ -22,6 +22,10 @@ function readCSV() {
                 resolve(results)
             })
         })
+}
+
+function aContainsB (a, b) {
+    return a.indexOf(b) >= 0;
 }
 
 exports.getPerson = getPerson
