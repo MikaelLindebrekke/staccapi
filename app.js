@@ -23,6 +23,6 @@ app.get('/search', async function (req, res, next) {
   }
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`)
 })
