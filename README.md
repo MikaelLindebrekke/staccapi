@@ -15,3 +15,12 @@ So it was then back to the drawing board to see how to make an API and that lead
 When making the API i got som good help from a friend showing me how the basics of an API should be made. With his help I was able to make a functioning API that I then can add a web interface on so that one can do full PEP check on a person. 
 
 With the API functiontion I wanted to add a web page front to it so that it would work as a full application. 
+
+
+
+## Prerequisites to run
+Node.js
+
+## Running locally
+`npm install`
+`npm start`
