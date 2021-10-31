@@ -1,7 +1,7 @@
 const db = require('./database')
 const express = require('express')
 const app = express()
-const port = 3000
+const PORT = process.env.PORT || 3000;
 app.use(express.static('public'))
 
 // GET functionality for searching through the database with name of person.
@@ -24,5 +24,5 @@ app.get('/search', async function (req, res, next) {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
