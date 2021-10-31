@@ -5,7 +5,7 @@ const { resolve } = require('path')
 async function getPerson(name) {
     const list = await readCSV()
     for (var person of list) {
-        if(person.name === name) {
+        if(person.name.equals(name)) {
             return person
         } 
     }

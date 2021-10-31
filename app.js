@@ -2,8 +2,9 @@ const db = require('./database')
 const express = require('express')
 const app = express()
 const port = 3000
+app.use(express.static('public'))
 
-app.get('/', async function (req, res, next) {
+app.get('/search', async function (req, res, next) {
   var name = req.query.name
   if (!name) {
     res.status(400)
