@@ -4,6 +4,7 @@ const app = express()
 const port = 3000
 app.use(express.static('public'))
 
+// GET functionality for searching through the database with name of person.
 app.get('/search', async function (req, res, next) {
   var name = req.query.name
   if (!name) {

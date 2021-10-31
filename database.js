@@ -2,16 +2,18 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const { resolve } = require('path')
 
+//Search function that reads through the list returend by the CSV parser and returns hit if name is present. 
 async function getPerson(name) {
     const list = await readCSV()
     for (var person of list) {
-        if(aContainsB(person.name.toLowerCase(), name.toLowerCase())) {
+        if(person.name.toLowerCase() == name.toLowerCase()) {
             return person
         } 
     }
     return null
 }
 
+//CSV parser
 function readCSV() {
     return new Promise((resolve, reject) => {
         const results = [];
@@ -22,10 +24,6 @@ function readCSV() {
                 resolve(results)
             })
         })
-}
-
-function aContainsB (a, b) {
-    return a.indexOf(b) >= 0;
 }
 
 exports.getPerson = getPerson
