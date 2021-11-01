@@ -18,6 +18,7 @@ With the API functiontion I wanted to add a web page front to it so that it woul
 
 At this stage of the project there is a lot more that I would want to do, but as always time is a factor. 
 So a couple of things that I think should be added:
+- Better handling of the search field. Now a user does not get good enough information when a search is bad. 
 - More functionality in the API. Currently only a GET method is available. 
 - Better ease of use for the user of the application. For example a visual cue that indicates that the search is working. 
 - Taking it even further one could implement an algorithm that preloads names so that the loading time when searching is cut back drastically. 
