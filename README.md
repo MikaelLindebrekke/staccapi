@@ -22,7 +22,7 @@ So a couple of things that I think should be added:
 - More functionality in the API. Currently only a GET method is available. 
 - Better ease of use for the user of the application. For example a visual cue that indicates that the search is working. 
 - Taking it even further one could implement an algorithm that preloads names so that the loading time when searching is cut back drastically. 
-  
+- Also I would want to add tests on the application. 
 
 ## Heroku
 Application available from
